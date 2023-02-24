@@ -1,31 +1,31 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
-        'name' => 'indrukwekkend/vacatures_nieuw',
+        'reference' => '589d76a6dcc2ede7d2ab9c0a1407f2fb0cb00906',
+        'name' => 'indrukwekkend/vacatures-nieuw',
         'dev' => true,
     ),
     'versions' => array(
         'firebase/php-jwt' => array(
-            'pretty_version' => 'v6.3.2',
-            'version' => '6.3.2.0',
+            'pretty_version' => 'v6.4.0',
+            'version' => '6.4.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../firebase/php-jwt',
             'aliases' => array(),
-            'reference' => 'ea7dda77098b96e666c5ef382452f94841e439cd',
+            'reference' => '4dd1e007f22a927ac77da5a3fbb067b42d3bc224',
             'dev_requirement' => false,
         ),
-        'indrukwekkend/vacatures_nieuw' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+        'indrukwekkend/vacatures-nieuw' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '589d76a6dcc2ede7d2ab9c0a1407f2fb0cb00906',
             'dev_requirement' => false,
         ),
         'nowakowskir/php-jwt' => array(
