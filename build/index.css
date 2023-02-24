@@ -1,0 +1,995 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/index.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+.wp-block-indrukwekkend-all-vacatures-grid .grid, .wp-block-indrukwekkend-all-vacatures-grid .list, .wp-block-indrukwekkend-favorieten-vacatures-grid .grid, .wp-block-indrukwekkend-favorieten-vacatures-grid .list {
+  display: flex;
+  flex-direction: row;
+}
+.wp-block-indrukwekkend-all-vacatures-grid:focus, .wp-block-indrukwekkend-favorieten-vacatures-grid:focus {
+  border: 1px solid;
+}
+.wp-block-indrukwekkend-all-vacatures-grid.has-filter aside.filter, .wp-block-indrukwekkend-favorieten-vacatures-grid.has-filter aside.filter {
+  width: 25%;
+  margin-right: 30px;
+}
+.wp-block-indrukwekkend-all-vacatures-grid.has-filter main.vacatures, .wp-block-indrukwekkend-favorieten-vacatures-grid.has-filter main.vacatures {
+  width: 75%;
+}
+.wp-block-indrukwekkend-all-vacatures-grid main.vacatures, .wp-block-indrukwekkend-favorieten-vacatures-grid main.vacatures {
+  width: 100%;
+}
+.wp-block-indrukwekkend-all-vacatures-grid main.vacatures .vacatures-grid, .wp-block-indrukwekkend-favorieten-vacatures-grid main.vacatures .vacatures-grid {
+  background: none;
+  grid-gap: var(--wp--style--block-gap);
+}
+.wp-block-indrukwekkend-all-vacatures-grid main.vacatures .vacatures-grid--list, .wp-block-indrukwekkend-favorieten-vacatures-grid main.vacatures .vacatures-grid--list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.wp-block-indrukwekkend-all-vacatures-grid main.vacatures .vacatures-grid--grid, .wp-block-indrukwekkend-favorieten-vacatures-grid main.vacatures .vacatures-grid--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  padding: 0;
+}
+.wp-block-indrukwekkend-all-vacatures-grid main.vacatures .vacatures-grid--grid.columns-2, .wp-block-indrukwekkend-favorieten-vacatures-grid main.vacatures .vacatures-grid--grid.columns-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.wp-block-indrukwekkend-all-vacatures-grid main.vacatures .vacatures-grid--grid.columns-3, .wp-block-indrukwekkend-favorieten-vacatures-grid main.vacatures .vacatures-grid--grid.columns-3 {
+  grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+}
+.wp-block-indrukwekkend-all-vacatures-grid main.vacatures .vacatures-grid--grid.columns-4, .wp-block-indrukwekkend-favorieten-vacatures-grid main.vacatures .vacatures-grid--grid.columns-4 {
+  grid-template-columns: repeat(auto-fill, minmax(223px, 1fr));
+}
+.wp-block-indrukwekkend-all-vacatures-grid main.vacatures .vacatures-grid--grid.columns-5, .wp-block-indrukwekkend-favorieten-vacatures-grid main.vacatures .vacatures-grid--grid.columns-5 {
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+}
+.wp-block-indrukwekkend-all-vacatures-grid main.vacatures .vacatures-grid--grid.columns-6, .wp-block-indrukwekkend-favorieten-vacatures-grid main.vacatures .vacatures-grid--grid.columns-6 {
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-gap: 15px;
+}
+
+.wp-block-indrukwekkend-all-vacatures-grid .card, .wp-block-indrukwekkend-favorieten-vacatures-grid .card {
+  border: 1px solid;
+  border-radius: 0;
+  padding: 0;
+  position: relative;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95em;
+}
+.wp-block-indrukwekkend-all-vacatures-grid .card:hover, .wp-block-indrukwekkend-all-vacatures-grid .card:focus-within, .wp-block-indrukwekkend-favorieten-vacatures-grid .card:hover, .wp-block-indrukwekkend-favorieten-vacatures-grid .card:focus-within {
+  box-shadow: 0 0 0 0.25rem;
+}
+.wp-block-indrukwekkend-all-vacatures-grid .card:hover .footer .pijltje, .wp-block-indrukwekkend-all-vacatures-grid .card:focus-within .footer .pijltje, .wp-block-indrukwekkend-favorieten-vacatures-grid .card:hover .footer .pijltje, .wp-block-indrukwekkend-favorieten-vacatures-grid .card:focus-within .footer .pijltje {
+  transform: translate(10px, 0);
+}
+.wp-block-indrukwekkend-all-vacatures-grid .card img, .wp-block-indrukwekkend-favorieten-vacatures-grid .card img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wp-block-indrukwekkend-all-vacatures-grid .card .card-content, .wp-block-indrukwekkend-favorieten-vacatures-grid .card .card-content {
+  padding-top: calc(0.25 * var(--wp--custom--spacing--small));
+  padding-bottom: calc(0.25 * var(--wp--custom--spacing--small));
+  padding-left: var(--wp--custom--spacing--small);
+  padding-right: var(--wp--custom--spacing--small);
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.wp-block-indrukwekkend-all-vacatures-grid .card .card-content__post-title h3, .wp-block-indrukwekkend-favorieten-vacatures-grid .card .card-content__post-title h3 {
+  margin: 0;
+}
+.wp-block-indrukwekkend-all-vacatures-grid .card .card-content__post-title h3 a, .wp-block-indrukwekkend-favorieten-vacatures-grid .card .card-content__post-title h3 a {
+  text-decoration: none;
+}
+.wp-block-indrukwekkend-all-vacatures-grid .card .card-content__post-title h3 a:focus, .wp-block-indrukwekkend-favorieten-vacatures-grid .card .card-content__post-title h3 a:focus {
+  text-decoration: underline;
+}
+.wp-block-indrukwekkend-all-vacatures-grid .card .card-content__post-title h3 a::after, .wp-block-indrukwekkend-favorieten-vacatures-grid .card .card-content__post-title h3 a::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.wp-block-indrukwekkend-all-vacatures-grid .card .card-content__post-meta, .wp-block-indrukwekkend-favorieten-vacatures-grid .card .card-content__post-meta {
+  position: relative;
+  margin-top: auto;
+}
+.wp-block-indrukwekkend-all-vacatures-grid .card .card-content__post-meta span, .wp-block-indrukwekkend-favorieten-vacatures-grid .card .card-content__post-meta span {
+  display: block;
+}
+.wp-block-indrukwekkend-all-vacatures-grid .card .card-content__post-meta span span, .wp-block-indrukwekkend-favorieten-vacatures-grid .card .card-content__post-meta span span {
+  display: inline-block;
+}
+.wp-block-indrukwekkend-all-vacatures-grid .card .card-content__post-meta span svg, .wp-block-indrukwekkend-favorieten-vacatures-grid .card .card-content__post-meta span svg {
+  margin-right: 0.5em;
+}
+.wp-block-indrukwekkend-all-vacatures-grid .card .card-content__post-excerpt, .wp-block-indrukwekkend-favorieten-vacatures-grid .card .card-content__post-excerpt {
+  position: relative;
+}
+.wp-block-indrukwekkend-all-vacatures-grid .card .card-content__post-excerpt p, .wp-block-indrukwekkend-favorieten-vacatures-grid .card .card-content__post-excerpt p {
+  margin: 0;
+}
+.wp-block-indrukwekkend-all-vacatures-grid .card .footer, .wp-block-indrukwekkend-favorieten-vacatures-grid .card .footer {
+  display: flex;
+  padding-left: var(--wp--custom--spacing--small);
+  padding-right: var(--wp--custom--spacing--small);
+  margin-bottom: calc(0.5 * var(--wp--custom--spacing--small));
+}
+
+.button--heart {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  border: 1px solid currentColor;
+  border-radius: 100%;
+  font-size: 23px;
+  color: grey;
+  width: 33px;
+  height: 32px;
+  padding: 4px;
+  margin: 5px;
+}
+
+.vacatures .slick-slider .slick-track {
+  display: flex !important;
+  margin-bottom: var(--wp--preset--spacing--40);
+  margin-top: var(--wp--preset--spacing--20);
+}
+.vacatures .slick-slider .slick-slide {
+  height: inherit !important;
+}
+.vacatures .slick-slider .slick-slide > div {
+  height: 100%;
+  margin: 0 15px;
+}
+.vacatures .slick-slider .slick-slide > div .card {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend. Nieuws blok
+ */
+.filter {
+  list-style: none;
+}
+.filter h3 {
+  margin: 0;
+}
+
+.searchbar {
+  margin-bottom: 30px;
+  background: var(--wp--preset--color--cta);
+  color: var(--wp--preset--color--base);
+  padding: 20px 50px 50px;
+}
+.searchbar p {
+  margin: 0;
+  margin-bottom: 3px;
+}
+.searchbar input {
+  background: var(--wp--preset--color--base);
+  border: none;
+  color: var(--wp--preset--color--contrast);
+  font-size: 1.2rem;
+  padding: 15px;
+  margin: 0;
+  width: 70%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.searchbar button {
+  background: var(--wp--preset--color--base);
+  border: none;
+  border-radius: 30px;
+  padding: 15px 20px;
+  color: var(--wp--preset--color--contrast);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  margin-left: 5%;
+}
+
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend. Nieuws blok
+ */
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.hidden {
+  display: none;
+}
+
+input[type=file] {
+  visibility: visible !important;
+}
+
+#form-holder > * {
+  max-width: 100% !important;
+}
+#form-holder #form-container > div {
+  max-width: 100% !important;
+  display: grid;
+  grid-row-gap: 20px;
+  grid-column-gap: 60px;
+  grid-template-columns: repeat(1, 100%);
+  color: white;
+}
+#form-holder #form-container > div :first-of-type {
+  grid-column: 1/3;
+}
+@media screen and (min-width: 720px) {
+  #form-holder #form-container > div {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+#form-holder #form-container :nth-child(3), #form-holder #form-container :nth-child(4), #form-holder #form-container :nth-child(5), #form-holder #form-container :nth-child(8), #form-holder #form-container :nth-child(9), #form-holder #form-container :nth-child(10) {
+  grid-column: 1;
+}
+#form-holder #form-container :nth-child(6), #form-holder #form-container :nth-child(7) {
+  grid-column: 1;
+}
+@media screen and (min-width: 720px) {
+  #form-holder #form-container :nth-child(6), #form-holder #form-container :nth-child(7) {
+    grid-column: 2;
+    grid-row: 2/6;
+  }
+}
+@media screen and (min-width: 720px) {
+  #form-holder #form-container :nth-child(7) {
+    grid-row: 5/9;
+  }
+}
+#form-holder #form-container input {
+  max-width: 100%;
+}
+#form-holder #form-container input:focus-visible {
+  outline: white;
+  border: 2px dashed #242222;
+}
+#form-holder #form-container input[type=text] {
+  padding: 10px 5px;
+  font-size: 20px;
+  width: 90%;
+}
+#form-holder #form-container .btn-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.129);
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  width: 80%;
+  height: 180px;
+  border: 3px dashed rgb(254, 254, 254);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#form-holder #form-container .btn-upload:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.wp-block-column.tekst-kolom {
+  overflow-y: hidden;
+  max-height: 2400px;
+  transition: max-height 0.7s linear;
+}
+.wp-block-column.tekst-kolom.verborgen {
+  max-height: var(--column-height, 1000px);
+  position: relative;
+}
+.wp-block-column.tekst-kolom.verborgen::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.26) 85%, rgb(255, 255, 255) 100%);
+}
+
+.wp-block-indrukwekkend-vacature-info {
+  position: relative;
+}
+.wp-block-indrukwekkend-vacature-info h4 {
+  margin-top: 0;
+  margin-bottom: var(--wp--custom--spacing--small);
+  font-size: var(--wp--preset--font-size--normal);
+}
+.wp-block-indrukwekkend-vacature-info h3.soort {
+  margin-top: 0;
+  margin-bottom: var(--wp--custom--spacing--small);
+  font-size: var(--wp--preset--font-size--large);
+}
+.wp-block-indrukwekkend-vacature-info .data-wrapper,
+.wp-block-indrukwekkend-vacature-info .data-wrapper-wide {
+  border: 1px solid currentColor;
+  padding: 5px;
+}
+.wp-block-indrukwekkend-vacature-info .data-wrapper dl,
+.wp-block-indrukwekkend-vacature-info .data-wrapper-wide dl {
+  width: 100%;
+  clear: none;
+}
+.wp-block-indrukwekkend-vacature-info .data-wrapper dl dt,
+.wp-block-indrukwekkend-vacature-info .data-wrapper-wide dl dt {
+  width: 38px;
+  display: inline-block;
+  vertical-align: top;
+}
+.wp-block-indrukwekkend-vacature-info .data-wrapper dl dt svg,
+.wp-block-indrukwekkend-vacature-info .data-wrapper-wide dl dt svg {
+  font-size: 28px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.wp-block-indrukwekkend-vacature-info .data-wrapper dl dd,
+.wp-block-indrukwekkend-vacature-info .data-wrapper-wide dl dd {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+.wp-block-indrukwekkend-vacature-info .data-wrapper dl dd > *,
+.wp-block-indrukwekkend-vacature-info .data-wrapper-wide dl dd > * {
+  margin-bottom: 0;
+}
+.wp-block-indrukwekkend-vacature-info .data-wrapper dl dd > * > *,
+.wp-block-indrukwekkend-vacature-info .data-wrapper-wide dl dd > * > * {
+  margin-bottom: 0;
+}
+
+.wp-block-column .wp-block-indrukwekkend-vacature-info .data-wrapper dl {
+  width: 100%;
+}
+.wp-block-column .wp-block-indrukwekkend-vacature-info .data-wrapper dl dd {
+  width: calc(100% - 38px);
+}
+.wp-block-column .wp-block-indrukwekkend-vacature-info .data-wrapper-wide dl {
+  width: 100%;
+  clear: both;
+  float: none;
+}
+.wp-block-column .wp-block-indrukwekkend-vacature-info .data-wrapper-wide::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media only screen and (min-width: 960px) {
+  .wp-block-indrukwekkend-vacature-info .data-wrapper dl {
+    width: 50%;
+  }
+  .wp-block-indrukwekkend-vacature-info .data-wrapper dl dd {
+    width: calc(100% - 155px);
+  }
+  .wp-block-indrukwekkend-vacature-info .data-wrapper-wide dl {
+    width: 100%;
+    clear: both;
+    float: none;
+  }
+  .wp-block-indrukwekkend-vacature-info .data-wrapper-wide::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+.wp-block-indrukwekkend-vacature-info .button-wrapper {
+  position: relative;
+  background-color: #411257;
+  padding: 5px 10px;
+}
+.wp-block-indrukwekkend-vacature-info .button-wrapper a {
+  color: #ffffff;
+}
+.wp-block-indrukwekkend-vacature-info .button-wrapper .share {
+  width: 80%;
+}
+.wp-block-indrukwekkend-vacature-info .button-wrapper .share span {
+  width: 100px;
+  line-height: 40px;
+  display: inline-block;
+  position: absolute;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+  color: #ffffff;
+}
+.wp-block-indrukwekkend-vacature-info .button-wrapper .share span svg {
+  font-size: 28px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.wp-block-indrukwekkend-vacature-info .button-wrapper .share nav {
+  font-size: 0;
+}
+.wp-block-indrukwekkend-vacature-info .button-wrapper .share a {
+  line-height: 32px;
+  width: 38px;
+  text-align: center;
+  display: inline-block;
+  background-color: transparent;
+  color: transparent;
+  overflow: hidden;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  margin: 0 -20px;
+  padding-top: 6px;
+}
+.wp-block-indrukwekkend-vacature-info .button-wrapper .share a:nth-child(1) {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  margin-left: 0;
+}
+.wp-block-indrukwekkend-vacature-info .button-wrapper .share a:nth-child(1):hover {
+  background-color: #61c5ec;
+}
+.wp-block-indrukwekkend-vacature-info .button-wrapper .share a:nth-child(2):hover {
+  background-color: #3B5998;
+}
+.wp-block-indrukwekkend-vacature-info .button-wrapper .share a:nth-child(3):hover {
+  background-color: #ea4335;
+}
+.wp-block-indrukwekkend-vacature-info .button-wrapper .share a:nth-child(4) {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  margin-right: 0;
+}
+.wp-block-indrukwekkend-vacature-info .button-wrapper .share a:nth-child(4):hover {
+  background-color: #058f18;
+}
+.wp-block-indrukwekkend-vacature-info .button-wrapper .share:hover span, .wp-block-indrukwekkend-vacature-info .button-wrapper .share.hover span {
+  opacity: 0;
+}
+.wp-block-indrukwekkend-vacature-info .button-wrapper .share:hover a, .wp-block-indrukwekkend-vacature-info .button-wrapper .share.hover a {
+  border-radius: 50%;
+  margin: 0 3px;
+  color: #ffffff;
+  font-size: 22px;
+  box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.wp-block-indrukwekkend-vacature-info .button-wrapper .share:hover a:hover, .wp-block-indrukwekkend-vacature-info .button-wrapper .share.hover a:hover {
+  color: #fff;
+}
+
+/**
+ * 1.0 Styles knoppen balk (Frontend)
+ *
+ * CSS for both Frontend+Backend.
+ */
+.vacature-navigatie {
+  display: flex;
+}
+.vacature-navigatie .search-box {
+  display: inline-flex;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 300ms, opacity 300ms;
+  align-self: center;
+}
+.vacature-navigatie .search-box.show {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 300ms;
+}
+.vacature-navigatie .search-box .search-field {
+  border: 1px solid;
+  border-radius: 0;
+  padding: 10px 15px;
+  background: var(--wp--preset--color--grey);
+  color: var(--wp--preset--color--contrast);
+  font-size: 16px;
+  margin-right: 5px;
+}
+.vacature-navigatie .search-box .search-field:focus {
+  outline: 2px dashed var(--wp--preset--color--primary);
+  border-color: #fff;
+}
+.vacature-navigatie .search-box .search-submit {
+  border: 1px solid;
+  border-radius: 0;
+  padding: 10px 15px;
+  background: var(--wp--preset--color--primary);
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+.vacature-navigatie .search-box .search-submit:hover {
+  background-color: var(--wp--preset--color--tertiary);
+}
+.vacature-navigatie a {
+  display: inline-flex;
+  flex-flow: column;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 25px;
+  line-height: 1em;
+  position: relative;
+  min-height: 50px;
+  align-self: center;
+}
+.vacature-navigatie a span:first-of-type {
+  font-size: 36px;
+}
+.vacature-navigatie a.job-button {
+  color: var(--wp--preset--color--base);
+  padding: 10px 15px;
+  background: var(--wp--preset--color--tertiary);
+  border-radius: 0;
+  transition: all 0.2s ease-in-out;
+  align-items: center;
+  justify-content: center;
+}
+.vacature-navigatie a.job-button span:first-of-type {
+  font-size: 30px;
+}
+.vacature-navigatie a.job-button:hover {
+  background-color: var(--wp--preset--color--primary);
+  color: #fff;
+}
+.vacature-navigatie a.search-button div {
+  flex-flow: column;
+  text-align: center;
+}
+.vacature-navigatie a.search-button div span:first-of-type {
+  font-size: 32px;
+}
+.vacature-navigatie a.search-button div.open {
+  display: none;
+}
+.vacature-navigatie a.search-button div.closed {
+  display: flex;
+}
+.vacature-navigatie a.search-button.open div.open {
+  display: flex;
+}
+.vacature-navigatie a.search-button.open div.closed {
+  display: none;
+}
+.vacature-navigatie a .teller {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--wp--preset--color--tertiary);
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 300ms, opacity 300ms;
+}
+.vacature-navigatie a .teller.show {
+  visibility: visible;
+  opacity: 1;
+}
+.vacature-navigatie a .onderschrift {
+  font-size: 14px;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/vacature-info/editor.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.editor-styles-wrapper .wp-block-indrukwekkend-vacature-info {
+  position: relative;
+}
+.editor-styles-wrapper .wp-block-indrukwekkend-vacature-info .data-wrapper,
+.editor-styles-wrapper .wp-block-indrukwekkend-vacature-info .data-wrapper-wide {
+  border: 1px solid currentColor;
+  padding: 5px;
+}
+.editor-styles-wrapper .wp-block-indrukwekkend-vacature-info .data-wrapper dl,
+.editor-styles-wrapper .wp-block-indrukwekkend-vacature-info .data-wrapper-wide dl {
+  width: 100%;
+  clear: none;
+}
+.editor-styles-wrapper .wp-block-indrukwekkend-vacature-info .data-wrapper dl dt,
+.editor-styles-wrapper .wp-block-indrukwekkend-vacature-info .data-wrapper-wide dl dt {
+  width: 100%;
+  display: block;
+}
+.editor-styles-wrapper .wp-block-indrukwekkend-vacature-info .data-wrapper dl dd,
+.editor-styles-wrapper .wp-block-indrukwekkend-vacature-info .data-wrapper-wide dl dd {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+.editor-styles-wrapper .wp-block-indrukwekkend-vacature-info .data-wrapper dl dd > *,
+.editor-styles-wrapper .wp-block-indrukwekkend-vacature-info .data-wrapper-wide dl dd > * {
+  margin-bottom: 0;
+}
+.editor-styles-wrapper .wp-block-indrukwekkend-vacature-info .data-wrapper dl dd > * > *,
+.editor-styles-wrapper .wp-block-indrukwekkend-vacature-info .data-wrapper-wide dl dd > * > * {
+  margin-bottom: 0;
+}
+.editor-styles-wrapper .wp-block-column .wp-block-indrukwekkend-vacature-info .data-wrapper dl {
+  width: 100%;
+}
+.editor-styles-wrapper .wp-block-column .wp-block-indrukwekkend-vacature-info .data-wrapper dl dd {
+  width: 100%;
+}
+.editor-styles-wrapper .wp-block-column .wp-block-indrukwekkend-vacature-info .data-wrapper-wide dl {
+  width: 100%;
+  clear: both;
+  float: none;
+}
+.editor-styles-wrapper .wp-block-column .wp-block-indrukwekkend-vacature-info .data-wrapper-wide::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/all-vacatures-grid/editor.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************/
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+/*!*************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./node_modules/slick-carousel/slick/slick.css ***!
+  \*************************************************************************************************************************************************************************************************/
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/*!*******************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./node_modules/slick-carousel/slick/slick-theme.css ***!
+  \*******************************************************************************************************************************************************************************************************/
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url(images/ajax-loader.fb6f3c23.gif) center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url(fonts/slick.a4e97f5a.eot);
+    src: url(fonts/slick.a4e97f5a.eot?#iefix) format('embedded-opentype'), url(fonts/slick.29518378.woff) format('woff'), url(fonts/slick.c94f7671.ttf) format('truetype'), url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxtZXRhZGF0YT5HZW5lcmF0ZWQgYnkgRm9udGFzdGljLm1lPC9tZXRhZGF0YT4KPGRlZnM+Cjxmb250IGlkPSJzbGljayIgaG9yaXotYWR2LXg9IjUxMiI+Cjxmb250LWZhY2UgZm9udC1mYW1pbHk9InNsaWNrIiB1bml0cy1wZXItZW09IjUxMiIgYXNjZW50PSI0ODAiIGRlc2NlbnQ9Ii0zMiIvPgo8bWlzc2luZy1nbHlwaCBob3Jpei1hZHYteD0iNTEyIiAvPgoKPGdseXBoIHVuaWNvZGU9IiYjODU5NDsiIGQ9Ik0yNDEgMTEzbDEzMCAxMzBjNCA0IDYgOCA2IDEzIDAgNS0yIDktNiAxM2wtMTMwIDEzMGMtMyAzLTcgNS0xMiA1LTUgMC0xMC0yLTEzLTVsLTI5LTMwYy00LTMtNi03LTYtMTIgMC01IDItMTAgNi0xM2w4Ny04OC04Ny04OGMtNC0zLTYtOC02LTEzIDAtNSAyLTkgNi0xMmwyOS0zMGMzLTMgOC01IDEzLTUgNSAwIDkgMiAxMiA1eiBtMjM0IDE0M2MwLTQwLTktNzctMjktMTEwLTIwLTM0LTQ2LTYwLTgwLTgwLTMzLTIwLTcwLTI5LTExMC0yOS00MCAwLTc3IDktMTEwIDI5LTM0IDIwLTYwIDQ2LTgwIDgwLTIwIDMzLTI5IDcwLTI5IDExMCAwIDQwIDkgNzcgMjkgMTEwIDIwIDM0IDQ2IDYwIDgwIDgwIDMzIDIwIDcwIDI5IDExMCAyOSA0MCAwIDc3LTkgMTEwLTI5IDM0LTIwIDYwLTQ2IDgwLTgwIDIwLTMzIDI5LTcwIDI5LTExMHoiLz4KPGdseXBoIHVuaWNvZGU9IiYjODU5MjsiIGQ9Ik0yOTYgMTEzbDI5IDMwYzQgMyA2IDcgNiAxMiAwIDUtMiAxMC02IDEzbC04NyA4OCA4NyA4OGM0IDMgNiA4IDYgMTMgMCA1LTIgOS02IDEybC0yOSAzMGMtMyAzLTggNS0xMyA1LTUgMC05LTItMTItNWwtMTMwLTEzMGMtNC00LTYtOC02LTEzIDAtNSAyLTkgNi0xM2wxMzAtMTMwYzMtMyA3LTUgMTItNSA1IDAgMTAgMiAxMyA1eiBtMTc5IDE0M2MwLTQwLTktNzctMjktMTEwLTIwLTM0LTQ2LTYwLTgwLTgwLTMzLTIwLTcwLTI5LTExMC0yOS00MCAwLTc3IDktMTEwIDI5LTM0IDIwLTYwIDQ2LTgwIDgwLTIwIDMzLTI5IDcwLTI5IDExMCAwIDQwIDkgNzcgMjkgMTEwIDIwIDM0IDQ2IDYwIDgwIDgwIDMzIDIwIDcwIDI5IDExMCAyOSA0MCAwIDc3LTkgMTEwLTI5IDM0LTIwIDYwLTQ2IDgwLTgwIDIwLTMzIDI5LTcwIDI5LTExMHoiLz4KPGdseXBoIHVuaWNvZGU9IiYjODIyNjsiIGQ9Ik00NzUgMjU2YzAtNDAtOS03Ny0yOS0xMTAtMjAtMzQtNDYtNjAtODAtODAtMzMtMjAtNzAtMjktMTEwLTI5LTQwIDAtNzcgOS0xMTAgMjktMzQgMjAtNjAgNDYtODAgODAtMjAgMzMtMjkgNzAtMjkgMTEwIDAgNDAgOSA3NyAyOSAxMTAgMjAgMzQgNDYgNjAgODAgODAgMzMgMjAgNzAgMjkgMTEwIDI5IDQwIDAgNzctOSAxMTAtMjkgMzQtMjAgNjAtNDYgODAtODAgMjAtMzMgMjktNzAgMjktMTEweiIvPgo8Z2x5cGggdW5pY29kZT0iJiM5NzsiIGQ9Ik00NzUgNDM5bDAtMTI4YzAtNS0xLTktNS0xMy00LTQtOC01LTEzLTVsLTEyOCAwYy04IDAtMTMgMy0xNyAxMS0zIDctMiAxNCA0IDIwbDQwIDM5Yy0yOCAyNi02MiAzOS0xMDAgMzktMjAgMC0zOS00LTU3LTExLTE4LTgtMzMtMTgtNDYtMzItMTQtMTMtMjQtMjgtMzItNDYtNy0xOC0xMS0zNy0xMS01NyAwLTIwIDQtMzkgMTEtNTcgOC0xOCAxOC0zMyAzMi00NiAxMy0xNCAyOC0yNCA0Ni0zMiAxOC03IDM3LTExIDU3LTExIDIzIDAgNDQgNSA2NCAxNSAyMCA5IDM4IDIzIDUxIDQyIDIgMSA0IDMgNyAzIDMgMCA1LTEgNy0zbDM5LTM5YzItMiAzLTMgMy02IDAtMi0xLTQtMi02LTIxLTI1LTQ2LTQ1LTc2LTU5LTI5LTE0LTYwLTIwLTkzLTIwLTMwIDAtNTggNS04NSAxNy0yNyAxMi01MSAyNy03MCA0Ny0yMCAxOS0zNSA0My00NyA3MC0xMiAyNy0xNyA1NS0xNyA4NSAwIDMwIDUgNTggMTcgODUgMTIgMjcgMjcgNTEgNDcgNzAgMTkgMjAgNDMgMzUgNzAgNDcgMjcgMTIgNTUgMTcgODUgMTcgMjggMCA1NS01IDgxLTE1IDI2LTExIDUwLTI2IDcwLTQ1bDM3IDM3YzYgNiAxMiA3IDIwIDQgOC00IDExLTkgMTEtMTd6Ii8+CjwvZm9udD48L2RlZnM+PC9zdmc+Cg==#slick) format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '←';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '→';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/favorite-vacatures-grid/editor.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+/*# sourceMappingURL=index.css.map*/

@@ -1,0 +1,68 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.editor-styles-wrapper {
+	.wp-block-indrukwekkend-vacature-info {
+		position: relative;
+	
+		.data-wrapper, 
+		.data-wrapper-wide {
+			border: 1px solid currentColor;
+			padding: 5px;
+			dl {
+				width: 100%;
+				clear: none;
+	
+				dt {
+					width: 100%;
+					display: block;
+				}
+	
+				dd {
+					display: inline-block;
+					vertical-align: top;
+					margin: 0;
+	
+					&>* {
+						margin-bottom: 0;
+	
+						&>* {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.wp-block-column {
+		.wp-block-indrukwekkend-vacature-info {
+			.data-wrapper {
+				dl {
+					width: 100%;
+	
+					dd {
+						width: 100%;
+					}
+				}
+	
+				&-wide {
+					dl {
+						width: 100%;
+						clear: both;
+						float: none;
+					}
+	
+					&::after {
+						content: "";
+						clear: both;
+						display: table;
+					}
+				}
+			}
+		}
+	}
+}

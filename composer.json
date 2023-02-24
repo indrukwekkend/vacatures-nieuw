@@ -1,0 +1,25 @@
+{
+    "name": "indrukwekkend/vacatures_nieuw",
+    "description": "",
+    "keywords": ["wordpress", "plugin"],
+    "homepage": "https://github.com/indrukwekkend/vacatures_nieuw",
+    "license": "MIT",
+    "authors": [
+        {
+        "name": "HP Hioolen",
+        "email": "hans-peter@indrukwekkend.nl",
+        "homepage": "https://indrukwekkend.nl"
+        }
+    ],
+    "type": "wordpress-plugin",
+    "require": {
+        "php": ">=7.1",
+        "nowakowskir/php-jwt": "^2.1",
+        "firebase/php-jwt": "^6.3"
+    },
+    "autoload": {
+		"psr-4": {
+			"IndrukwekkendVacatures\\": "phpApp/"
+		}
+	}
+}

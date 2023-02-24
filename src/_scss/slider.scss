@@ -1,0 +1,22 @@
+.vacatures {
+  .slick-slider {
+    .slick-track {
+      display: flex !important;
+      margin-bottom: var(--wp--preset--spacing--40);
+      margin-top: var(--wp--preset--spacing--20);
+    }
+
+    .slick-slide {
+      height: inherit !important;
+      > div {
+        height: 100%;
+        margin: 0 15px;
+
+        .card {
+          height: 100%;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+}

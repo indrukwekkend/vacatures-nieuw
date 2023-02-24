@@ -1,0 +1,10 @@
+{
+	"name": "indrukwekkend/vacature-info",
+	"category": "vacatures",
+	"attributes": {
+		"mainImage": {
+			"type": "string",
+			"default": "https://via.placeholder.com/500x300/"
+		}
+	}
+}

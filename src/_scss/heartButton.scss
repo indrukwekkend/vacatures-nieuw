@@ -1,0 +1,15 @@
+.button--heart {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  border: 1px solid currentColor;
+  border-radius: 100%;
+  font-size: 23px;
+  color: grey;
+  width: 33px;
+  height: 32px;
+  padding: 4px;
+  margin: 5px;
+}

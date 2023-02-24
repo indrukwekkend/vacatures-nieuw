@@ -1,0 +1,72 @@
+.wp-block-indrukwekkend-all-vacatures-grid, .wp-block-indrukwekkend-favorieten-vacatures-grid {
+  //vanaf hier de Grid view
+  // based on 1200 px wide
+  // de &.cards class wordt toegevoegd door de instellingen in het block. 
+  .grid, .list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &:focus {
+    border: 1px solid;
+  }
+
+  &.has-filter {
+    aside.filter {
+      width: 25%;
+      margin-right: 30px;
+    }
+    main.vacatures {
+      width: 75%;
+    }
+  }
+
+  main {
+     &.vacatures {
+      width: 100%;
+
+      .vacatures-grid {
+        background: none;
+        grid-gap: var(--wp--style--block-gap);
+
+        &--list {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+
+        &--grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          // omdat het een list is:
+          list-style: none;
+          padding: 0;
+
+          &.columns-2 {
+            grid-template-columns: repeat(2, 1fr);
+          }
+
+          &.columns-3 {
+            grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+          }
+
+          &.columns-4 {
+            grid-template-columns: repeat(auto-fill, minmax(223px, 1fr));
+          }
+
+          &.columns-5 {
+            grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+          }
+
+          &.columns-6 {
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            grid-gap: 15px;
+          }
+        }
+      }
+    }
+  }
+}

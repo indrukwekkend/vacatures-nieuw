@@ -1,0 +1,341 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.hidden {
+	display: none;
+}
+
+input[type="file"] {
+	visibility: visible !important;
+}
+
+#form-holder {
+	> * {
+		max-width: 100%!important;
+	}
+
+	// op basis van het gekozen formulier moet er een grid worden gemaakt, die moet er dus noeg in
+	#form-container {
+		> div {
+			max-width: 100%!important;
+			display: grid;
+			grid-row-gap: 20px;
+			grid-column-gap: 60px;
+			grid-template-columns: repeat(1, 100%);
+			color: white;
+
+			:first-of-type {
+				grid-column: 1/3;
+			}
+
+			@media screen and (min-width: 720px) {
+				grid-template-columns: repeat(2, 50%);
+			}
+		}
+
+		:nth-child(3), :nth-child(4), :nth-child(5), :nth-child(8), :nth-child(9), :nth-child(10) {
+			grid-column: 1;
+		}
+
+		:nth-child(6), :nth-child(7) {
+			grid-column: 1;
+			@media screen and (min-width: 720px) {
+				grid-column: 2;
+				grid-row: 2/6;
+			}
+		}
+		
+		:nth-child(7) {
+			@media screen and (min-width: 720px) {
+				grid-row: 5/9;
+			}
+		}
+
+		input {
+			max-width: 100%;
+
+			&:focus-visible {
+				outline: white;
+				border: 2px dashed #242222;
+			}
+			
+			&[type="text"] {
+				padding: 10px 5px;
+				font-size: 20px;
+				width: 90%;
+			}
+		}
+
+		.btn-upload {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: rgba(255, 255, 255, 0.129);
+			color: rgb(255, 255, 255);
+			font-size: 24px;
+			width: 80%;
+			height: 180px;
+			border: 3px dashed rgb(254, 254, 254);
+			border-radius: 5px;
+			padding: 10px;
+			margin: 10px 0;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+
+			&:hover {
+				background-color: #000;
+				color: #fff;
+			}
+		}
+	}
+}
+
+.wp-block-column.tekst-kolom {
+	overflow-y: hidden;
+	max-height: 2400px;
+	transition: max-height 0.7s linear;
+
+	&.verborgen {
+		max-height: var(--column-height, 1000px);
+		position: relative;
+
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.26) 85%, rgba(255,255,255,1) 100%);
+		}
+	}
+}
+
+.wp-block-indrukwekkend-vacature-info {
+	position: relative;
+
+	h4 {
+		margin-top: 0;
+		margin-bottom: var(--wp--custom--spacing--small);
+		font-size: var(--wp--preset--font-size--normal);
+	}
+	
+	h3.soort {
+		margin-top: 0;
+		margin-bottom: var(--wp--custom--spacing--small);
+		font-size: var(--wp--preset--font-size--large);
+	}
+
+	.data-wrapper, 
+	.data-wrapper-wide {
+		border: 1px solid currentColor;
+		padding: 5px;
+		dl {
+			width: 100%;
+			clear: none;
+
+			dt {
+				width: 38px;
+				display: inline-block;
+				vertical-align: top;
+
+				svg {
+					font-size: 28px;
+					vertical-align: middle;
+					margin-right: 10px;
+				}
+			}
+
+			dd {
+				display: inline-block;
+				vertical-align: top;
+				margin: 0;
+
+				&>* {
+					margin-bottom: 0;
+
+					&>* {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.wp-block-column {
+	.wp-block-indrukwekkend-vacature-info {
+		.data-wrapper {
+			dl {
+				width: 100%;
+
+				dd {
+					width: calc(100% - 38px);
+				}
+			}
+
+			&-wide {
+				dl {
+					width: 100%;
+					clear: both;
+					float: none;
+				}
+
+				&::after {
+					content: "";
+					clear: both;
+					display: table;
+				}
+			}
+		}
+  }
+}
+
+@media only screen and (min-width: 600px) {
+	.wp-block-indrukwekkend-vacature-info {
+
+  }
+}
+
+@media only screen and (min-width: 960px) {
+	.wp-block-indrukwekkend-vacature-info {
+		.data-wrapper {
+			dl {
+				width: 50%;
+
+				dd {
+					width: calc(100% - 155px);
+				}
+			}
+
+			&-wide {
+				dl {
+					width: 100%;
+					clear: both;
+					float: none;
+				}
+
+				&::after {
+					content: "";
+					clear: both;
+					display: table;
+				}
+			}
+		}
+  }
+}
+
+
+.wp-block-indrukwekkend-vacature-info {
+
+	.button-wrapper {
+		position: relative;
+		background-color: #411257;
+		padding: 5px 10px;
+
+	$backgroundColor: transparent;
+	$buttonColor: transparent;
+	$textColor: #ffffff;
+	$hoverColor: #fff;
+	$facebook: #3B5998;
+	$twitter: #61c5ec;
+	$google: #ea4335;
+	$github: #058f18;
+
+	a {
+		color: $textColor;
+	}
+
+	.share {
+		width: 80%;
+
+		span {
+			width: 100px;
+			line-height: 40px;
+			display: inline-block;
+			position: absolute;
+			// left: 50%;
+			// margin-left: -100px;
+			opacity: 1;
+			transition: opacity 0.3s ease-in-out;
+			pointer-events: none;
+			color: $textColor;
+
+			svg {
+				font-size: 28px;
+				vertical-align: middle;
+				margin-right: 5px;
+			}	
+		}
+
+		nav {
+			font-size: 0;
+		}
+
+		a {
+			line-height: 32px;
+			width: 38px;
+			text-align: center;
+			display: inline-block;
+			background-color: $buttonColor;
+			color: $buttonColor;
+			overflow: hidden;
+			opacity: 1;
+			transition: all 0.3s ease-in-out;
+			margin: 0 -20px;
+			padding-top: 6px;
+
+
+			&:nth-child(1) {
+				border-top-left-radius: 40px;
+				border-bottom-left-radius: 40px;
+				margin-left: 0;
+
+				&:hover {
+					background-color: $twitter;
+				}
+			}
+
+			&:nth-child(2):hover {
+				background-color: $facebook;
+			}
+
+			&:nth-child(3):hover {
+				background-color: $google;
+			}
+
+			&:nth-child(4){
+				border-top-right-radius: 40px;
+				border-bottom-right-radius: 40px;
+				margin-right: 0;
+
+				&:hover {
+					background-color: $github;
+				}
+			}
+		}
+
+		&:hover, &.hover {
+			span {
+				opacity: 0;
+			}
+
+			a {
+				border-radius: 50%;
+				margin: 0 3px;
+				color: $textColor;
+				font-size: 22px;
+				box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
+
+				&:hover {
+					color: $hoverColor;
+				}
+			}
+		}
+	}
+	}
+}

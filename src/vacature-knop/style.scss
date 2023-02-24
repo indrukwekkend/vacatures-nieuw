@@ -1,0 +1,67 @@
+/**
+ * 1.0 Styles knoppen balk (Frontend)
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+ .vacature-navigatie {
+  a {
+    display: inline-flex;
+    flex-flow: column;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 25px;
+    line-height: 1em;
+    position: relative;
+    min-height: 50px;
+
+    span:first-of-type {
+      font-size: 36px;
+    }
+
+    &.job-button {
+      color: var(--wp--preset--color--base);
+      padding: 10px 15px;
+      background: var(--wp--preset--color--tertiary);
+      border-radius: 0;
+      transition: all 0.2s ease-in-out;
+      align-items: center;
+      justify-content: center;
+
+      span:first-of-type {
+        font-size: 30px;
+      }
+
+      &:hover {
+        background-color: var(--wp--preset--color--primary);
+        color: #fff;
+      }
+    }
+
+    &.search-button {
+
+      span:first-of-type {
+        font-size: 32px;
+      }
+    }
+
+    .teller {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      line-height: 22px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: var(--wp--preset--color--tertiary);
+      color: #fff;
+      font-size: 14px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .onderschrift {
+      font-size: 14px;
+    }
+  }
+ }

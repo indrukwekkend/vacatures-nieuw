@@ -1,0 +1,55 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend. Nieuws blok
+ */
+
+.filter {
+  list-style: none;
+
+  h3 {
+    margin: 0;
+  }
+}
+
+.searchbar {
+  margin-bottom: 30px;
+  background: var(--wp--preset--color--cta);
+  color: var(--wp--preset--color--base);
+  padding: 20px 50px 50px;
+
+  p {
+    margin: 0;
+    margin-bottom: 3px;
+  }
+
+  input {
+    background: var(--wp--preset--color--base);
+    border: none;
+    color: var(--wp--preset--color--contrast);
+    font-size: 1.2rem;
+    padding: 15px;
+    margin: 0;
+    width: 70%;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+
+  button {
+    background: var(--wp--preset--color--base);
+    border: none;
+    border-radius: 30px;
+    padding: 15px 20px;
+    color: var(--wp--preset--color--contrast);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 5%;
+  }
+}
+
+// .slick-track,
+// .slick-list {
+//   width: 100%;
+//   min-width: 100%;
+// }

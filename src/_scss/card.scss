@@ -1,0 +1,89 @@
+.wp-block-indrukwekkend-all-vacatures-grid, .wp-block-indrukwekkend-favorieten-vacatures-grid {
+  .card {
+    border: 1px solid;
+    border-radius: 0;
+    padding: 0;
+    position: relative;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.95em;
+
+    &:hover, &:focus-within {
+      box-shadow: 0 0 0 0.25rem;
+
+      .footer {
+        .pijltje {
+          transform: translate(10px, 0);
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding-top: calc(0.25 * var(--wp--custom--spacing--small));
+      padding-bottom: calc(0.25 * var(--wp--custom--spacing--small));
+      padding-left: var(--wp--custom--spacing--small);
+      padding-right: var(--wp--custom--spacing--small);
+      flex: 1 0 auto;
+      display: flex;
+      flex-direction: column;
+
+      &__post-title {
+        h3 {
+          margin: 0;
+          a {
+            text-decoration: none;
+            &:focus {
+              text-decoration: underline;
+            }
+            &::after {
+              content: '';
+              position: absolute;
+              z-index: 1;
+              left: 0;
+              top: 0;
+              right: 0;
+              bottom: 0;
+            }
+          }
+        }
+      }
+
+      &__post-meta {
+        position: relative;
+        margin-top: auto;
+        span {
+          display: block;
+
+          span {
+            display: inline-block;
+          }
+
+          svg {
+            margin-right: 0.5em;
+          }
+        }
+      }
+
+      &__post-excerpt {
+        position: relative;
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+
+    .footer {
+      display: flex;
+      padding-left: var(--wp--custom--spacing--small);
+      padding-right: var(--wp--custom--spacing--small);
+      margin-bottom: calc(0.5 * var(--wp--custom--spacing--small));
+    }
+  }
+}

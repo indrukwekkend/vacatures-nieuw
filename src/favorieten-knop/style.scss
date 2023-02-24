@@ -1,0 +1,142 @@
+/**
+ * 1.0 Styles knoppen balk (Frontend)
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+ .vacature-navigatie {
+  display: flex;
+
+  .search-box {
+    display: inline-flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+    align-self: center;
+   
+    &.show {
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 0s linear 0s, opacity 300ms;
+    }
+
+    .search-field {
+      border: 1px solid;
+      border-radius: 0;
+      padding: 10px 15px;
+      background: var(--wp--preset--color--grey);
+      color: var(--wp--preset--color--contrast);
+      font-size: 16px;
+      margin-right: 5px;
+
+      &:focus {
+        outline: 2px dashed var(--wp--preset--color--primary);
+        border-color: #fff;
+      }
+    }
+
+    .search-submit {
+      border: 1px solid;
+      border-radius: 0;
+      padding: 10px 15px;
+      background: var(--wp--preset--color--primary);
+      color: #fff;
+      font-size: 16px;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: var(--wp--preset--color--tertiary);
+      }
+    }
+  }
+
+  a {
+    display: inline-flex;
+    flex-flow: column;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 25px;
+    line-height: 1em;
+    position: relative;
+    min-height: 50px;
+    align-self: center;
+
+    span:first-of-type {
+      font-size: 36px;
+    }
+
+    &.job-button {
+      color: var(--wp--preset--color--base);
+      padding: 10px 15px;
+      background: var(--wp--preset--color--tertiary);
+      border-radius: 0;
+      transition: all 0.2s ease-in-out;
+      align-items: center;
+      justify-content: center;
+
+      span:first-of-type {
+        font-size: 30px;
+      }
+
+      &:hover {
+        background-color: var(--wp--preset--color--primary);
+        color: #fff;
+      }
+    }
+
+    &.search-button {
+
+      div {
+        flex-flow: column;
+        text-align: center;
+
+        span:first-of-type {
+          font-size: 32px;
+        }
+
+        &.open {
+          display: none;
+        }
+        &.closed {
+          display: flex;
+        }
+      }
+
+      &.open {
+        div.open {
+          display: flex;
+        }
+        div.closed {
+          display: none;
+        }
+      }
+    }
+
+    .teller {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      line-height: 22px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: var(--wp--preset--color--tertiary);
+      color: #fff;
+      font-size: 14px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s linear 300ms, opacity 300ms;
+
+      &.show {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    .onderschrift {
+      font-size: 14px;
+    }
+  }
+ }
