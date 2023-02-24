@@ -1,11 +1,11 @@
 <?php
 
 /*
-  Plugin Name: Vacature Plugin - Indrukwekkend  
+  API CALL voor CRONTAB
   Version: 1.0
   Author: Hans-Peter Hioolen
   Author URI: https://github.com/hioolen
- * Plugin URI: https://github.com/indrukwekkend/vacatures
+ * Plugin URI: https://github.com/indrukwekkend/vacatures-nieuw
  * Description: Custom post type producten met Single-page Template en product overzicht in Guten blocks
  * Author: Hans-Peter Hioolen
  * Author URI: https://indrukwekkend.nl
