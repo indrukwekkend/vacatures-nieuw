@@ -28,7 +28,7 @@ use stdClass;
 /**
  * Class TaxonomyAPI.
  */
-class TaxonomyAPI {
+class TaxonomyApi {
 
 	/**
 	 * Constructor.
@@ -144,4 +144,3 @@ class TaxonomyAPI {
 			// return true;
 	}
 }
-
