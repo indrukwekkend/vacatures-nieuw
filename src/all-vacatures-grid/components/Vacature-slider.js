@@ -44,7 +44,23 @@ const VacatureSlider = (props) => {
     infinite: true,
 		speed: scrollSpeed,
 		slidesToShow: columns,
-		slidesToScroll: slidesToScroll
+		slidesToScroll: slidesToScroll,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
 	};
 
   //Geen error of loading, dus data is geladen

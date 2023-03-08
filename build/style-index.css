@@ -286,6 +286,16 @@ input[type=file] {
   background: var(--wp--preset--color--cta);
   color: var(--wp--preset--color--base);
   padding: 20px 50px 50px;
+  display: flex;
+  flex-flow: column;
+  transition: all 1.3s ease-in-out;
+  max-height: 1000px;
+  height: auto;
+  overflow-y: scroll;
+  transition: max-height 0.5s ease-in-out;
+}
+.searchbar > * {
+  transition: all 0.3s ease-in-out;
 }
 .searchbar p {
   margin: 0;
@@ -298,20 +308,89 @@ input[type=file] {
   font-size: 1.2rem;
   padding: 15px;
   margin: 0;
-  width: 70%;
   display: inline-block;
   box-sizing: border-box;
+}
+.searchbar input[type=text] {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .searchbar input[type=text] {
+    width: 70%;
+  }
 }
 .searchbar button {
   background: var(--wp--preset--color--base);
   border: none;
   border-radius: 30px;
+  box-sizing: border-box;
   padding: 15px 20px;
   color: var(--wp--preset--color--contrast);
   font-size: 1.2rem;
   font-weight: bold;
   margin: 0;
-  margin-left: 5%;
+  margin-top: 15px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .searchbar button {
+    width: 28%;
+    margin-left: 2%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .searchbar button {
+    width: 25%;
+    margin-left: 5%;
+  }
+}
+.searchbar button.filter-toggle {
+  display: block;
+  align-self: flex-end;
+  padding: 10px 11px 9px 11px;
+  margin-left: 0;
+  margin-top: 0;
+  border-radius: 100%;
+  width: auto;
+}
+@media screen and (min-width: 768px) {
+  .searchbar button.filter-toggle {
+    display: none;
+  }
+}
+.searchbar .mobile-filter {
+  display: block;
+  margin-top: 30px;
+}
+.searchbar .mobile-filter h2 {
+  display: none;
+}
+.searchbar .mobile-filter h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .searchbar .mobile-filter {
+    display: none;
+  }
+}
+.searchbar.hide {
+  max-height: 15px;
+}
+@media screen and (min-width: 768px) {
+  .searchbar.hide {
+    max-height: 100px;
+  }
+}
+.searchbar.hide p, .searchbar.hide form, .searchbar.hide .mobile-filter {
+  opacity: 0.1;
+  visibility: hidden;
+}
+@media screen and (min-width: 768px) {
+  .searchbar.hide p, .searchbar.hide form {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 /*!***************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/favorite-vacatures-grid/style.scss ***!

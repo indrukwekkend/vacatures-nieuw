@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react'
 import { useStore } from '../../_Store/vacatureStore'
 
-
 // import ItemDetails from './ItemDetails'
 
 // op basis van het veranderen van het zoekveld moet de functie getVacatures worden aangeroepen
@@ -42,6 +41,7 @@ const SearchFilter = () => {
 
   return (
     <>
+
       <p>Zoek vacatures op trefwoord</p>
       <form onSubmit={handleSubmit}>
         <input 

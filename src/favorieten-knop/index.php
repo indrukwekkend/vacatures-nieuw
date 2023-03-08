@@ -16,6 +16,9 @@
  * 
  */
 
+ include 'components/jobalert.php';
+
+
 function render_block_indrukwekkend_favorieten( $attributes ) {
 
 	$socials = '';
@@ -66,14 +69,65 @@ function render_block_indrukwekkend_favorieten( $attributes ) {
 				<span class='onderschrift'>Jobalert</span>
 			</a>";
 
+			$socials .=
+			'<!-- Hamburger navigation -->
+      <button class="hamburger hamburger--spin" type="button">
+        <span class="hamburger-title">Menu</span>
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>';
+
+			// $socials .= 
+			// '<!-- mobile or hidden navigation -->
+			// <header class="mobile-navigation-container start">
+			
+			// 		<nav class="nav-mobile">
+			// 			<div class="search">
+							
+			// 				<form action="/?s" method="get" class="search-form">
+			// 					<i class="fas fa-search"></i>
+			// 					<span class="widget">
+			// 						<input class="input-legacy  input-legacy--button input-legacy--open footer__input" type="search" name="s" placeholder="Zoeken">
+			// 					</span>
+			// 				</form>
+			// 			</div>
+
+		 
+			// 		</nav>
+			// </header>';
+
+			$jobalert = create_vacature();
+
+	//primary nav
+	$nav_primary = "";
+	if (has_nav_menu('primary_navigation'))	:
+		$nav_primary .= wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav', 'echo' => false]) ;
+	endif;
+
 	
 
 	//output
 	return sprintf(
 		'<div class="vacature-navigatie">
 			%1$s
-		</div>',
+		</div>
+		<script>
+			var mobileHeader = document.createElement("header");
+			mobileHeader.className = "mobile-navigation-container";
+			mobileHeader.innerHTML = `<nav class="nav-mobile">%2$s</nav>`;
+			document.body.appendChild(mobileHeader);
+		</script>
+		<script>
+			var jobalert = document.createElement("div");
+			jobalert.id = "jobalert-holder";
+			jobalert.innerHTML = `%3$s`;
+			document.body.appendChild(jobalert);
+		</script>
+		',
 		$socials,
+		$nav_primary,
+		$jobalert
 	);
 }
 

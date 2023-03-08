@@ -7,6 +7,7 @@ import CategorieFilter from "./components/CategorieFilter"
 import SearchFilter from "./components/SearchFilter"
 import Vacatures from "./components/Vacatures"
 import VacatureSlider from "./components/Vacature-slider"
+import {FaSlidersH} from 'react-icons/fa';
 
 const divsToUpdate = document.querySelectorAll(".boilerplate-update-me")
 
@@ -38,8 +39,15 @@ function OurComponent(props) {
   return (
 		<>
 			{ displaySearch && (
-				<div className="searchbar">
+				<div className="searchbar hide" id="zoekmodule">
+					<button onClick={ openFilter } className="filter-toggle">
+							<FaSlidersH alt={'Filter'}/>
+					</button>
 					<SearchFilter />
+					<div className="mobile-filter filter">
+						<CategorieFilter />
+					</div>
+						
 				</div>
 			) }
 
@@ -62,3 +70,9 @@ function OurComponent(props) {
 		</>
   )
 }
+
+function openFilter() {
+	module = document.getElementById('zoekmodule');
+	module.classList.toggle('hide');
+}
+

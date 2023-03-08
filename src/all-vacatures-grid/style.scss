@@ -17,6 +17,17 @@
   background: var(--wp--preset--color--cta);
   color: var(--wp--preset--color--base);
   padding: 20px 50px 50px;
+  display: flex;
+  flex-flow: column;
+  transition: all 1.3s ease-in-out;
+  max-height: 1000px;
+  height: auto;
+  overflow-y: scroll;
+  transition: max-height 0.5s ease-in-out;
+
+  > * {
+    transition: all 0.3s ease-in-out;
+  }
 
   p {
     margin: 0;
@@ -30,21 +41,94 @@
     font-size: 1.2rem;
     padding: 15px;
     margin: 0;
-    width: 70%;
     display: inline-block;
     box-sizing: border-box;
+
+    &[type="text"] {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+      &[type="text"] {
+        width: 70%;
+      }
+    }
   }
 
   button {
     background: var(--wp--preset--color--base);
     border: none;
     border-radius: 30px;
+    box-sizing: border-box;
     padding: 15px 20px;
     color: var(--wp--preset--color--contrast);
     font-size: 1.2rem;
     font-weight: bold;
     margin: 0;
-    margin-left: 5%;
+    margin-top: 15px;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      width: 28%;
+      margin-left: 2%;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 25%;
+      margin-left: 5%;
+    }
+
+    &.filter-toggle {
+      display: block;
+      align-self: flex-end;
+      padding: 10px 11px 9px 11px;
+      margin-left: 0;
+      margin-top: 0;
+      border-radius: 100%;
+      width: auto;
+
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  .mobile-filter {
+    display: block;
+    margin-top: 30px;
+
+    h2 {
+      display: none;
+    }
+
+    h3 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &.hide {
+    max-height: 15px;
+
+    @media screen and (min-width: 768px) {
+      max-height: 100px;
+    }
+
+    p, form, .mobile-filter {
+      opacity: 0.1;
+      visibility: hidden;
+    }
+
+    p, form {
+      @media screen and (min-width: 768px) {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
   }
 }
 

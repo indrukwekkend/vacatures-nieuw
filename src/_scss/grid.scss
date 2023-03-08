@@ -13,11 +13,21 @@
 
   &.has-filter {
     aside.filter {
-      width: 25%;
-      margin-right: 30px;
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        display: block;
+        width: 25%;
+        margin-right: 30px;
+      }
+      
     }
     main.vacatures {
-      width: 75%;
+      width: 100%;
+
+      @media screen and (min-width: 768px) {
+        width: 75%;
+      }
     }
   }
 
