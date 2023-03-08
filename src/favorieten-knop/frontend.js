@@ -65,5 +65,34 @@ searchButton.addEventListener("click", (e) => {
   e.preventDefault();
   searchForm.classList.toggle("show");
   searchButton.classList.toggle("open");
-})
+});
+
+////////////////////////////////////////////
 //
+// 3. Job alert button
+//
+////////////////////////////////////////////
+
+const jobAlertButton = document.querySelector("#jobalert")
+const jobAlertCloseButton = document.querySelector("#jobalert-close")
+const jobAlertForm = document.querySelector("#jobalert-holder")
+
+jobAlertButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  jobAlertForm.classList.toggle("show");
+  // When the modal is shown, we want a fixed body
+  document.body.style.position = 'fixed';
+  document.body.style.top = `-${window.scrollY}px`;
+});
+
+jobAlertCloseButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  jobAlertForm.classList.toggle("show");
+  // When the modal is hidden, we want to remain at the top of the scroll position
+  const scrollY = document.body.style.top;
+  document.body.style.position = '';
+  document.body.style.top = '';
+  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
+});
+
