@@ -1,12 +1,12 @@
 <?php
-function create_vacature() {
+function create_jobalert() {
 
   $jobalert = '<div class="jobalert">';
   $jobalert .= '<div class="button">';
   $jobalert .= '<button class="jobalert-button" id="jobalert-close" title="sluit vacature alert" type="button">';
   $jobalert .= '<i class="fas fa-times"></i>';
   $jobalert .= '</button>';
-$jobalert .= '</div>';
+  $jobalert .= '</div>';
 
   $jobalert .= '<h2>Vacature alert</h2>';
   $jobalert .= '<p class="jobalert__description">Ontvang een e-mail wanneer er een nieuwe vacature online komt.</p>';
@@ -25,14 +25,10 @@ $jobalert .= '</div>';
   $jobalert .= '</form>';
   $jobalert .= '</div>';
   $jobalert .= '</div>';
-
-
+  
   $jobalert .= '</div>';
     
-
-
   return $jobalert;
-
 
 }
 ?>

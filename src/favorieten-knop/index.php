@@ -97,7 +97,7 @@ function render_block_indrukwekkend_favorieten( $attributes ) {
 			// 		</nav>
 			// </header>';
 
-			$jobalert = create_vacature();
+			$jobalert = create_jobalert();
 
 	//primary nav
 	$nav_primary = "";
