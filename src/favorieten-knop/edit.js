@@ -14,7 +14,7 @@
           <div 			
             className='navigatie'
           >
-              <span clasName='text'>
+              <span className='text'>
                 <a href='#'>Navigatie</a>
               </span>
       </div>

@@ -91,8 +91,8 @@ const sluitdatum = result[5];
         />
       </div>
       {/* Hier de knop naar het formulier: */}
-      <div class="wp-block-button is-style-cta solliciteer">
-        <a class="wp-block-button__link wp-element-button" href="#form-holder">Solliciteer</a>
+      <div className="wp-block-button is-style-cta solliciteer">
+        <a className="wp-block-button__link wp-element-button" href="#form-holder">Solliciteer</a>
       </div>
       {/* Sluitingsdatum onderaan het blok */}
       <ListItem 

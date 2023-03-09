@@ -11,9 +11,9 @@
   export default function navigatie( { attributes, setAttributes, className } ) {
   
     return [
-      <div class='wp-block-button is-style-cta'>
-        <a class='wp-block-button__link wp-element-button'>
-          Zoek <span class='vacature-aantal-update-me'></span> Vacatures
+      <div className='wp-block-button is-style-cta'>
+        <a className='wp-block-button__link wp-element-button'>
+          Zoek <span className='vacature-aantal-update-me'></span> Vacatures
         </a>
       </div>
     ];

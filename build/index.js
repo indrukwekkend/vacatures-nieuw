@@ -78,7 +78,7 @@ const VacatureItem = props => {
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "card-content__post-title"
   }, titleTrimmed ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, (0,html_react_parser__WEBPACK_IMPORTED_MODULE_2__["default"])(titleTrimmed)) : __('(no title)')), displayMeta && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    class: "card-content__post-meta"
+    className: "card-content__post-meta"
   }, displayFunctie && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "card-content__post-meta-functie"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(react_icons_ai__WEBPACK_IMPORTED_MODULE_3__.AiOutlineFunction, {
@@ -825,7 +825,7 @@ function navigatie(_ref) {
   return [(0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "navigatie"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
-    clasName: "text"
+    className: "text"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: "#"
   }, "Navigatie")))];
@@ -1096,7 +1096,7 @@ class LatestvacaturesEdit extends _wordpress_element__WEBPACK_IMPORTED_MODULE_1_
       }, titleTrimmed ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("h3", null, titleTrimmed, displayLocatie && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("span", {
         className: "card-content__post-meta-locatie"
       }, "\xA0", post.meta.vacatures_locatie)) : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_8__.__)('(no title)')), displayMeta && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
-        class: "card-content__post-meta"
+        className: "card-content__post-meta"
       }, displayFunctie && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("span", {
         className: "card-content__post-meta-functie"
       }, post.meta.vacatures_functie), displayLocatie2 && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("span", {
@@ -2377,11 +2377,11 @@ function navigatie(_ref) {
     className
   } = _ref;
   return [(0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    class: "wp-block-button is-style-cta"
+    className: "wp-block-button is-style-cta"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
-    class: "wp-block-button__link wp-element-button"
+    className: "wp-block-button__link wp-element-button"
   }, "Zoek ", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
-    class: "vacature-aantal-update-me"
+    className: "vacature-aantal-update-me"
   }), " Vacatures"))];
 }
 
