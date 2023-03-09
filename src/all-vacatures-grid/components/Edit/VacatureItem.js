@@ -71,7 +71,7 @@ const VacatureItem = (props) => {
           } */}
 
           {displayMeta &&
-            <div class="card-content__post-meta">
+            <div className="card-content__post-meta">
               
               { displayFunctie &&
                 <span className="card-content__post-meta-functie">
