@@ -93,9 +93,9 @@ input[type="file"] {
 	}
 }
 
-.wp-block-column.tekst-kolom {
+#api-content {
 	overflow-y: hidden;
-	max-height: 2400px;
+	max-height: 5400px;
 	transition: max-height 0.7s linear;
 
 	&.verborgen {

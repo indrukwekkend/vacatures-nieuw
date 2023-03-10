@@ -97,25 +97,25 @@ window.onload = function() {
 }
 
 // onclick event op id readmore
-var readmore = document.getElementById("readmore");
+var readmore = document.getElementById("read-more");
+
 if	(readmore) {
 	readmore.addEventListener("click", function() {
 
 		var seeMore = this.firstChild;
 
-		var column = document.querySelectorAll(".wp-block-column.tekst-kolom");
+		var column = document.getElementById("api-content");
 
-		if (column.length === 0) {
-			column.forEach(function(element) {
-				if (element.classList.contains("verborgen")) {
-					element.classList.remove("verborgen");
-					seeMore.innerText = "Lees minder";
-				} else {
-					element.classList.add("verborgen");
-					seeMore.innerText = "Lees meer";
-				}
-			});
+		console.log(column);
+
+		if (column.classList.contains("verborgen")) {
+			column.classList.remove("verborgen");
+			seeMore.innerText = "Lees minder";
+		} else {
+			column.classList.add("verborgen");
+			seeMore.innerText = "Lees meer";
 		}
 	});
+		
 }
 

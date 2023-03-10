@@ -150,7 +150,11 @@ function create_vacature($vacature) {
 	$content .=
 	'<!-- wp:columns {"lock":{"move":true,"remove":true},"align":"wide",,"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|50","left":"var:preset|spacing|50"}}}} -->
 	<div class="wp-block-columns alignwide"><!-- wp:column {"width":"75%","templateLock":"all","lock":{"move":true,"remove":true},"className":"tekst-kolom verborgen"} -->
-	<div class="wp-block-column tekst-kolom verborgen" style="flex-basis:75%">';
+	<div class="wp-block-column tekst-kolom verborgen" style="flex-basis:75%">
+	<!-- wp:group {"className":"verborgen","layout":{"type":"constrained"},"anchor":"api-content"} -->
+	<div id="api-content" class="wp-block-group verborgen">
+	
+	<!-- wp:post-title /-->';
 
 	if ($subtitle != '') {
 		$content .= paragraph($subtitle, 'intro');
@@ -182,7 +186,14 @@ function create_vacature($vacature) {
 	// }
 	
 	$content .= '</div>
-
+	<!-- /wp:group -->
+	
+	<!-- wp:buttons -->
+	<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline","anchor":"read-more"} -->
+	<div class="wp-block-button is-style-outline" id="read-more"><a class="wp-block-button__link wp-element-button" rel="#">Lees meer</a></div>
+	<!-- /wp:button --></div>
+	<!-- /wp:buttons -->
+	</div>
 	<!-- /wp:column -->
 
 	<!-- wp:column {"width":"33%","templateLock":"all","lock":{"move":true,"remove":true},"className":"afbeelding-kolom"} -->
@@ -193,13 +204,6 @@ function create_vacature($vacature) {
 	<!-- /wp:column --></div>
 	<!-- /wp:columns -->
 
-	<!-- wp:group {"lock":{"move":true,"remove":true},"align":"wide","layout":{"type":"default"}} -->
-	<div class="wp-block-group alignwide" id="Lees-verder"><!-- wp:buttons -->
-	<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-	<div class="wp-block-button is-style-outline" id="read-more"><a class="wp-block-button__link wp-element-button" rel="#">Lees meer</a></div>
-	<!-- /wp:button --></div>
-	<!-- /wp:buttons --></div>
-	<!-- /wp:group -->
 
 	<!-- wp:group {"templateLock":"all","lock":{"move":true,"remove":true},"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","right":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40"}}},"backgroundColor":"cta","layout":{"type":"constrained"}} -->
 	<div class="wp-block-group alignwide has-cta-background-color has-background" id="form-holder" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"constrained"}} -->
