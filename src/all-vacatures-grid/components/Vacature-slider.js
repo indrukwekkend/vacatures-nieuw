@@ -30,7 +30,7 @@ const VacatureSlider = (props) => {
 
   //return
   if (loading) {
-    return <p>Loading</p>;
+    return <div class="spinner-holder"><div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>;
   }
   if (hasErrors) {
     return <p>cannot read data</p>;
