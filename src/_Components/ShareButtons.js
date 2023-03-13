@@ -13,10 +13,10 @@ const ShareButton = (props) => {
       >
         <span><IoMdShareAlt/>Delen</span>
         <nav>
-          <a target="_blank" href={`https://www.facebook.com/sharer/sharer.php?u=`+sharelink} ><BsTwitter alt='Share met Twitter' /></a>
-          <a href={sharelink}> <BsFacebook alt='Share met Facebook'/></a>
-          <a href={sharelink}><BsLinkedin alt='Share met LinkedIn'/></a>
-          <a href={sharelink}><BsWhatsapp alt='Share met Whatsapp' /></a>
+          <a target="_blank" href={`https://twitter.com/share?text=Interessante vacature in Zaanstad&url=`+sharelink+`&hashtags=zaanstad,werken bij,pak je kans`} ><BsTwitter alt='Share met Twitter' /></a>
+          <a target="_blank" href={`https://www.facebook.com/sharer/sharer.php?u=`+sharelink} ><BsFacebook alt='Share met Facebook'/></a>
+          <a target="_blank" href={`https://www.linkedin.com/sharing/share-offsite/?url=`+sharelink}><BsLinkedin alt='Share met LinkedIn'/></a>
+          <a target="_blank" href={`https://api.whatsapp.com/send?text=`+sharelink} data-action="share/whatsapp/share"><BsWhatsapp alt='Deel met Whatsapp' /></a>
         </nav>
 
     </div>
@@ -25,3 +25,4 @@ const ShareButton = (props) => {
 };
 
 export default ShareButton;
+

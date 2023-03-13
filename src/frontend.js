@@ -1,4 +1,5 @@
-// import "./frontend.scss"
+import MyImage from './_assets/images/actief.jpg';
+import "./frontend.scss"
 //import javascript
 import './all-vacatures-grid/frontend.js';
 import './favorite-vacatures-grid/frontend.js';

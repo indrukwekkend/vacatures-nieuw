@@ -10,7 +10,7 @@
  *  
  */
 
-$coverimage = INDRUKWEKKEND_VACATURES_PLUGIN_BUILD_URL . '/images/actief.jpg';
+$coverimage = INDRUKWEKKEND_VACATURES_PLUGIN_URL . '/inc/images/actief.jpg';
 
 $headerContent = '<!-- wp:cover {"url":"' . $coverimage .'","id":50,"dimRatio":0,"minHeight":600,"minHeightUnit":"px","isDark":false,"align":"full"} -->
 <div class="wp-block-cover alignfull is-light" style="min-height:600px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
